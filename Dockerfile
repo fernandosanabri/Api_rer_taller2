@@ -7,5 +7,5 @@ workdir /taller2
 copy requirements.txt ./
 run pip install --no-cache-dir -r requirements.txt
 
-copy. .
+copy . .
 cmd ["gunicorn", "_b", "0.0.0.0:5000", "main:app"]
